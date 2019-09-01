@@ -12,7 +12,11 @@
 <script src="js/aos.js"></script>
 <script src="js/particles.min.js"></script>
 <script src="js/particle.js" defer="defer"></script>
-
+<script>
+$.getJSON("https://api.countapi.xyz/hit/namespace/vinoth", function(response) {
+    document.getElementById('visits').innerText = response.value;
+});
+</script>
 <script src="js/stats.min.js"></script>
 
 <!-- <script src="js/particles.min.js" defer="defer"></script> -->
